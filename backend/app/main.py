@@ -35,7 +35,7 @@ app.state.repo = build_repository()
 allowed = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[o.strip() for o in allowed.split(",") if o.strip()],
+    allow_origins=[o.strip().rstrip("/") for o in allowed.split(",") if o.strip()],  # tolerate a trailing slash
     allow_methods=["GET"],
     allow_headers=["*"],
     expose_headers=["X-Process-Time-Ms"],
