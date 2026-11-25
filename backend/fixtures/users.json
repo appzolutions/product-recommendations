@@ -1,0 +1,653 @@
+[
+ {
+  "_id": "AYXV2KGAFRFW0H9NYWT1FD4MX82M",
+  "recommendations": [
+   {
+    "rank": 1,
+    "product_id": "B0SCAB8N86",
+    "predicted_rating": 5.0
+   },
+   {
+    "rank": 2,
+    "product_id": "B0VJS93HGE",
+    "predicted_rating": 4.91
+   },
+   {
+    "rank": 3,
+    "product_id": "B0XP6A6YFH",
+    "predicted_rating": 4.9
+   },
+   {
+    "rank": 4,
+    "product_id": "B0QD1DQCJU",
+    "predicted_rating": 4.86
+   },
+   {
+    "rank": 5,
+    "product_id": "B0TWR69RRB",
+    "predicted_rating": 4.84
+   },
+   {
+    "rank": 6,
+    "product_id": "B0ZQ7CX2Z1",
+    "predicted_rating": 4.64
+   },
+   {
+    "rank": 7,
+    "product_id": "B0P87Q4X43",
+    "predicted_rating": 4.63
+   },
+   {
+    "rank": 8,
+    "product_id": "B09SZJ8THZ",
+    "predicted_rating": 4.06
+   },
+   {
+    "rank": 9,
+    "product_id": "B0S9ZLYQ8X",
+    "predicted_rating": 3.86
+   },
+   {
+    "rank": 10,
+    "product_id": "B0SNB2029P",
+    "predicted_rating": 3.64
+   }
+  ],
+  "past_ratings": [
+   {
+    "product_id": "B0BR7SA5E8",
+    "rating": 4.0,
+    "timestamp": 1679002376057
+   },
+   {
+    "product_id": "B0PQXNJ1YD",
+    "rating": 3.0,
+    "timestamp": 1660682917879
+   },
+   {
+    "product_id": "B0TR0143VB",
+    "rating": 4.0,
+    "timestamp": 1656967796398
+   },
+   {
+    "product_id": "B0X4UEH82L",
+    "rating": 3.0,
+    "timestamp": 1556503785436
+   },
+   {
+    "product_id": "B0NZ3B1PFD",
+    "rating": 5.0,
+    "timestamp": 1563137401340
+   }
+  ]
+ },
+ {
+  "_id": "AATJPUU3XF6MZKP0EC498UK1GEQF",
+  "recommendations": [
+   {
+    "rank": 1,
+    "product_id": "B0DW996GDR",
+    "predicted_rating": 4.88
+   },
+   {
+    "rank": 2,
+    "product_id": "B0RGQKK9G5",
+    "predicted_rating": 4.76
+   },
+   {
+    "rank": 3,
+    "product_id": "B062XUVSS1",
+    "predicted_rating": 4.74
+   },
+   {
+    "rank": 4,
+    "product_id": "B0ZGEDP73W",
+    "predicted_rating": 4.71
+   },
+   {
+    "rank": 5,
+    "product_id": "B0VNQ5QSUG",
+    "predicted_rating": 4.69
+   },
+   {
+    "rank": 6,
+    "product_id": "B0QG17LQL3",
+    "predicted_rating": 4.6
+   },
+   {
+    "rank": 7,
+    "product_id": "B0SNB2029P",
+    "predicted_rating": 4.3
+   },
+   {
+    "rank": 8,
+    "product_id": "B02H14WER3",
+    "predicted_rating": 4.25
+   },
+   {
+    "rank": 9,
+    "product_id": "B0EGZD8PCF",
+    "predicted_rating": 3.79
+   },
+   {
+    "rank": 10,
+    "product_id": "B0TWR69RRB",
+    "predicted_rating": 3.75
+   }
+  ],
+  "past_ratings": [
+   {
+    "product_id": "B0DY5928JK",
+    "rating": 4.0,
+    "timestamp": 1658384081516
+   },
+   {
+    "product_id": "B0BBT6SNY4",
+    "rating": 5.0,
+    "timestamp": 1670735093513
+   },
+   {
+    "product_id": "B0XY75EFT6",
+    "rating": 4.0,
+    "timestamp": 1581666403837
+   },
+   {
+    "product_id": "B0NZ3B1PFD",
+    "rating": 5.0,
+    "timestamp": 1579627884967
+   }
+  ]
+ },
+ {
+  "_id": "AO2XCSOHDMMEX6L2QAGWNCXVJCNQ",
+  "recommendations": [
+   {
+    "rank": 1,
+    "product_id": "B0DY5928JK",
+    "predicted_rating": 4.51
+   },
+   {
+    "rank": 2,
+    "product_id": "B0SNB2029P",
+    "predicted_rating": 4.34
+   },
+   {
+    "rank": 3,
+    "product_id": "B0BBT6SNY4",
+    "predicted_rating": 4.25
+   },
+   {
+    "rank": 4,
+    "product_id": "B0YMAX0F6T",
+    "predicted_rating": 3.95
+   },
+   {
+    "rank": 5,
+    "product_id": "B0BAG9J3NP",
+    "predicted_rating": 3.94
+   },
+   {
+    "rank": 6,
+    "product_id": "B0S9ZLYQ8X",
+    "predicted_rating": 3.86
+   },
+   {
+    "rank": 7,
+    "product_id": "B00EZ3TDTG",
+    "predicted_rating": 3.74
+   },
+   {
+    "rank": 8,
+    "product_id": "B09SZJ8THZ",
+    "predicted_rating": 3.69
+   },
+   {
+    "rank": 9,
+    "product_id": "B0BEP0KSYZ",
+    "predicted_rating": 3.65
+   },
+   {
+    "rank": 10,
+    "product_id": "B0ZQ7CX2Z1",
+    "predicted_rating": 3.61
+   }
+  ],
+  "past_ratings": [
+   {
+    "product_id": "B04W88NT48",
+    "rating": 3.0,
+    "timestamp": 1659375474442
+   },
+   {
+    "product_id": "B0VNQ5QSUG",
+    "rating": 5.0,
+    "timestamp": 1595142348813
+   },
+   {
+    "product_id": "B0DW996GDR",
+    "rating": 5.0,
+    "timestamp": 1564821539648
+   },
+   {
+    "product_id": "B0Y0WHXAWX",
+    "rating": 4.0,
+    "timestamp": 1565557316083
+   },
+   {
+    "product_id": "B0TWR69RRB",
+    "rating": 5.0,
+    "timestamp": 1587318328711
+   },
+   {
+    "product_id": "B0SFQESH5A",
+    "rating": 5.0,
+    "timestamp": 1570069136840
+   }
+  ]
+ },
+ {
+  "_id": "AKIAD9JZFX6KJWSK7KEGY5MTIC4U",
+  "recommendations": [
+   {
+    "rank": 1,
+    "product_id": "B04W88NT48",
+    "predicted_rating": 4.92
+   },
+   {
+    "rank": 2,
+    "product_id": "B02H14WER3",
+    "predicted_rating": 4.5
+   },
+   {
+    "rank": 3,
+    "product_id": "B0TR0143VB",
+    "predicted_rating": 4.41
+   },
+   {
+    "rank": 4,
+    "product_id": "B0X4UEH82L",
+    "predicted_rating": 4.21
+   },
+   {
+    "rank": 5,
+    "product_id": "B0P87Q4X43",
+    "predicted_rating": 4.17
+   },
+   {
+    "rank": 6,
+    "product_id": "B0Y0WHXAWX",
+    "predicted_rating": 4.15
+   },
+   {
+    "rank": 7,
+    "product_id": "B0TJ3S1K87",
+    "predicted_rating": 4.11
+   },
+   {
+    "rank": 8,
+    "product_id": "B062XUVSS1",
+    "predicted_rating": 3.82
+   },
+   {
+    "rank": 9,
+    "product_id": "B0NVF6BU5E",
+    "predicted_rating": 3.76
+   },
+   {
+    "rank": 10,
+    "product_id": "B0QD1DQCJU",
+    "predicted_rating": 3.73
+   }
+  ],
+  "past_ratings": [
+   {
+    "product_id": "B0SNB2029P",
+    "rating": 3.0,
+    "timestamp": 1652113193664
+   },
+   {
+    "product_id": "B0GXS6L9BP",
+    "rating": 3.0,
+    "timestamp": 1601475459043
+   },
+   {
+    "product_id": "B0SCAB8N86",
+    "rating": 5.0,
+    "timestamp": 1555827625360
+   },
+   {
+    "product_id": "B0VJS93HGE",
+    "rating": 5.0,
+    "timestamp": 1692065758258
+   },
+   {
+    "product_id": "B0DW996GDR",
+    "rating": 4.0,
+    "timestamp": 1642437528483
+   }
+  ]
+ },
+ {
+  "_id": "AL4ZGEIW1XF266CCIFU6FD6YIBEH",
+  "recommendations": [
+   {
+    "rank": 1,
+    "product_id": "B0RGQKK9G5",
+    "predicted_rating": 4.98
+   },
+   {
+    "rank": 2,
+    "product_id": "B0QG17LQL3",
+    "predicted_rating": 4.75
+   },
+   {
+    "rank": 3,
+    "product_id": "B0VNQ5QSUG",
+    "predicted_rating": 4.47
+   },
+   {
+    "rank": 4,
+    "product_id": "B0HLSDMNVV",
+    "predicted_rating": 4.31
+   },
+   {
+    "rank": 5,
+    "product_id": "B01C1BVVQF",
+    "predicted_rating": 4.25
+   },
+   {
+    "rank": 6,
+    "product_id": "B0TR0143VB",
+    "predicted_rating": 4.23
+   },
+   {
+    "rank": 7,
+    "product_id": "B02H14WER3",
+    "predicted_rating": 4.14
+   },
+   {
+    "rank": 8,
+    "product_id": "B0PQXNJ1YD",
+    "predicted_rating": 4.11
+   },
+   {
+    "rank": 9,
+    "product_id": "B0Y0WHXAWX",
+    "predicted_rating": 3.85
+   },
+   {
+    "rank": 10,
+    "product_id": "B0TWR69RRB",
+    "predicted_rating": 3.6
+   }
+  ],
+  "past_ratings": [
+   {
+    "product_id": "B0SUAK2ZWJ",
+    "rating": 4.0,
+    "timestamp": 1683248816995
+   },
+   {
+    "product_id": "B0BEP0KSYZ",
+    "rating": 4.0,
+    "timestamp": 1610427167752
+   },
+   {
+    "product_id": "B0BAG9J3NP",
+    "rating": 3.0,
+    "timestamp": 1644367943254
+   },
+   {
+    "product_id": "B0BBT6SNY4",
+    "rating": 5.0,
+    "timestamp": 1618268044115
+   },
+   {
+    "product_id": "B0ZGEDP73W",
+    "rating": 4.0,
+    "timestamp": 1621950342711
+   }
+  ]
+ },
+ {
+  "_id": "A297GQ8ZXQYXJXVF2OLDS7QTUACO",
+  "recommendations": [
+   {
+    "rank": 1,
+    "product_id": "B00EZ3TDTG",
+    "predicted_rating": 4.91
+   },
+   {
+    "rank": 2,
+    "product_id": "B0TWR69RRB",
+    "predicted_rating": 4.85
+   },
+   {
+    "rank": 3,
+    "product_id": "B062XUVSS1",
+    "predicted_rating": 4.7
+   },
+   {
+    "rank": 4,
+    "product_id": "B0VJS93HGE",
+    "predicted_rating": 4.55
+   },
+   {
+    "rank": 5,
+    "product_id": "B0BAG9J3NP",
+    "predicted_rating": 4.49
+   },
+   {
+    "rank": 6,
+    "product_id": "B0QG17LQL3",
+    "predicted_rating": 4.34
+   },
+   {
+    "rank": 7,
+    "product_id": "B0SFQESH5A",
+    "predicted_rating": 4.1
+   },
+   {
+    "rank": 8,
+    "product_id": "B0ZGEDP73W",
+    "predicted_rating": 3.84
+   },
+   {
+    "rank": 9,
+    "product_id": "B0BBT6SNY4",
+    "predicted_rating": 3.83
+   },
+   {
+    "rank": 10,
+    "product_id": "B0S9ZLYQ8X",
+    "predicted_rating": 3.76
+   }
+  ],
+  "past_ratings": [
+   {
+    "product_id": "B01C1BVVQF",
+    "rating": 4.0,
+    "timestamp": 1664951925846
+   },
+   {
+    "product_id": "B0BEP0KSYZ",
+    "rating": 5.0,
+    "timestamp": 1647286982987
+   },
+   {
+    "product_id": "B0DY5928JK",
+    "rating": 3.0,
+    "timestamp": 1680011821905
+   },
+   {
+    "product_id": "B0RPQ570E6",
+    "rating": 4.0,
+    "timestamp": 1550791547807
+   },
+   {
+    "product_id": "B0838J98BQ",
+    "rating": 3.0,
+    "timestamp": 1629429731274
+   }
+  ]
+ },
+ {
+  "_id": "AW275PKACD8BZLPKDGA9MJ0M760L",
+  "recommendations": [
+   {
+    "rank": 1,
+    "product_id": "B00EZ3TDTG",
+    "predicted_rating": 4.95
+   },
+   {
+    "rank": 2,
+    "product_id": "B02H14WER3",
+    "predicted_rating": 4.75
+   },
+   {
+    "rank": 3,
+    "product_id": "B0SNB2029P",
+    "predicted_rating": 4.74
+   },
+   {
+    "rank": 4,
+    "product_id": "B061DNEP4L",
+    "predicted_rating": 4.59
+   },
+   {
+    "rank": 5,
+    "product_id": "B0XP6A6YFH",
+    "predicted_rating": 4.53
+   },
+   {
+    "rank": 6,
+    "product_id": "B0SFQESH5A",
+    "predicted_rating": 4.23
+   },
+   {
+    "rank": 7,
+    "product_id": "B0838J98BQ",
+    "predicted_rating": 3.98
+   },
+   {
+    "rank": 8,
+    "product_id": "B0GXS6L9BP",
+    "predicted_rating": 3.8
+   },
+   {
+    "rank": 9,
+    "product_id": "B0NZ3B1PFD",
+    "predicted_rating": 3.69
+   },
+   {
+    "rank": 10,
+    "product_id": "B0EGZD8PCF",
+    "predicted_rating": 3.68
+   }
+  ],
+  "past_ratings": [
+   {
+    "product_id": "B0TJ3T2Y0Q",
+    "rating": 5.0,
+    "timestamp": 1564809456878
+   },
+   {
+    "product_id": "B0JA6D7TGP",
+    "rating": 4.0,
+    "timestamp": 1561874196011
+   },
+   {
+    "product_id": "B0TJ3S1K87",
+    "rating": 5.0,
+    "timestamp": 1678512667378
+   },
+   {
+    "product_id": "B0NVF6BU5E",
+    "rating": 5.0,
+    "timestamp": 1548613237656
+   }
+  ]
+ },
+ {
+  "_id": "AKQPMKUMYVPY8447AB1OTNZEKJCB",
+  "recommendations": [
+   {
+    "rank": 1,
+    "product_id": "B0S9ZLYQ8X",
+    "predicted_rating": 4.96
+   },
+   {
+    "rank": 2,
+    "product_id": "B01FLLJBK5",
+    "predicted_rating": 4.9
+   },
+   {
+    "rank": 3,
+    "product_id": "B0TJ3T2Y0Q",
+    "predicted_rating": 4.88
+   },
+   {
+    "rank": 4,
+    "product_id": "B0DY5928JK",
+    "predicted_rating": 4.85
+   },
+   {
+    "rank": 5,
+    "product_id": "B0P87Q4X43",
+    "predicted_rating": 4.56
+   },
+   {
+    "rank": 6,
+    "product_id": "B0ZGEDP73W",
+    "predicted_rating": 4.55
+   },
+   {
+    "rank": 7,
+    "product_id": "B0SUAK2ZWJ",
+    "predicted_rating": 4.49
+   },
+   {
+    "rank": 8,
+    "product_id": "B0X54B0X9U",
+    "predicted_rating": 4.31
+   },
+   {
+    "rank": 9,
+    "product_id": "B0NZ3B1PFD",
+    "predicted_rating": 4.01
+   },
+   {
+    "rank": 10,
+    "product_id": "B0X4UEH82L",
+    "predicted_rating": 3.72
+   }
+  ],
+  "past_ratings": [
+   {
+    "product_id": "B0HLSDMNVV",
+    "rating": 3.0,
+    "timestamp": 1593240277852
+   },
+   {
+    "product_id": "B0RUC5MLT4",
+    "rating": 4.0,
+    "timestamp": 1589153441390
+   },
+   {
+    "product_id": "B01C1BVVQF",
+    "rating": 5.0,
+    "timestamp": 1550719173003
+   },
+   {
+    "product_id": "B0B5YLH7DP",
+    "rating": 3.0,
+    "timestamp": 1563681197223
+   },
+   {
+    "product_id": "B0SNB2029P",
+    "rating": 5.0,
+    "timestamp": 1648356819221
+   }
+  ]
+ }
+]

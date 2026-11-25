@@ -1,0 +1,28 @@
+# Render "Blueprint": creates both services from this repository in one step.
+# In Render: New + > Blueprint > pick the GitHub repo. Then fill in the secret values it asks for.
+services:
+  - type: web
+    name: game-picks-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: MONGODB_URI
+        sync: false          # secret: paste the Atlas connection string in the Render dashboard
+      - key: MONGODB_DB
+        value: recommender
+      - key: ALLOWED_ORIGINS
+        sync: false          # the front end's address, e.g. https://game-picks.onrender.com
+
+  - type: web
+    name: game-picks
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false          # the API's address, e.g. https://game-picks-api.onrender.com

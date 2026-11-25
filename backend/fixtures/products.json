@@ -1,0 +1,386 @@
+[
+ {
+  "_id": "B0EGZD8PCF",
+  "title": "Mystic Kingdom (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 29.99,
+  "average_rating": 3.8,
+  "rating_number": 9040
+ },
+ {
+  "_id": "B0QD1DQCJU",
+  "title": "Hyper Quest (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 29.99,
+  "average_rating": 4.3,
+  "rating_number": 9191
+ },
+ {
+  "_id": "B0ZGEDP73W",
+  "title": "Turbo Arena (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 9.99,
+  "average_rating": 3.9,
+  "rating_number": 4082
+ },
+ {
+  "_id": "B0X4UEH82L",
+  "title": "Turbo Rally HD Remaster (PC)",
+  "main_category": "Video Games",
+  "price": 39.99,
+  "average_rating": 4.8,
+  "rating_number": 6921
+ },
+ {
+  "_id": "B0XY75EFT6",
+  "title": "Pixel Legends (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": 29.99,
+  "average_rating": 3.5,
+  "rating_number": 5084
+ },
+ {
+  "_id": "B0B5YLH7DP",
+  "title": "Ancient Raiders (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": 39.99,
+  "average_rating": 4.5,
+  "rating_number": 6531
+ },
+ {
+  "_id": "B0TJ3T2Y0Q",
+  "title": "Rogue League Collection (PC)",
+  "main_category": "Video Games",
+  "price": 39.99,
+  "average_rating": 3.6,
+  "rating_number": 3834
+ },
+ {
+  "_id": "B0SUAK2ZWJ",
+  "title": "Star League (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 19.99,
+  "average_rating": 4.1,
+  "rating_number": 9175
+ },
+ {
+  "_id": "B061DNEP4L",
+  "title": "Rogue Dungeon (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": null,
+  "average_rating": 4.3,
+  "rating_number": 1689
+ },
+ {
+  "_id": "B0BEP0KSYZ",
+  "title": "Star Kingdom (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": 29.99,
+  "average_rating": 4.7,
+  "rating_number": 7646
+ },
+ {
+  "_id": "B0GXS6L9BP",
+  "title": "Robot League (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 69.99,
+  "average_rating": 3.6,
+  "rating_number": 8911
+ },
+ {
+  "_id": "B0S9ZLYQ8X",
+  "title": "Star Raiders (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 49.99,
+  "average_rating": 4.6,
+  "rating_number": 6576
+ },
+ {
+  "_id": "B0BBT6SNY4",
+  "title": "Lost Odyssey (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": 69.99,
+  "average_rating": 4.8,
+  "rating_number": 5986
+ },
+ {
+  "_id": "B0XP6A6YFH",
+  "title": "Iron Rally Collection (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 49.99,
+  "average_rating": 4.1,
+  "rating_number": 2936
+ },
+ {
+  "_id": "B01FLLJBK5",
+  "title": "Hyper Chronicles Collection (PC)",
+  "main_category": "Video Games",
+  "price": 39.99,
+  "average_rating": 4.3,
+  "rating_number": 7783
+ },
+ {
+  "_id": "B0BAG9J3NP",
+  "title": "Frozen Kingdom (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": null,
+  "average_rating": 3.7,
+  "rating_number": 8223
+ },
+ {
+  "_id": "B0DY5928JK",
+  "title": "Lost Chronicles Collection (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 19.99,
+  "average_rating": 4.7,
+  "rating_number": 3012
+ },
+ {
+  "_id": "B0DW996GDR",
+  "title": "Star Kingdom Collection (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 19.99,
+  "average_rating": 4.6,
+  "rating_number": 8330
+ },
+ {
+  "_id": "B04W88NT48",
+  "title": "Ancient Racer (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 9.99,
+  "average_rating": 4.2,
+  "rating_number": 4069
+ },
+ {
+  "_id": "B02H14WER3",
+  "title": "Galaxy Odyssey (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": null,
+  "average_rating": 4.4,
+  "rating_number": 2016
+ },
+ {
+  "_id": "B0QG17LQL3",
+  "title": "Shadow Party Deluxe Edition (PC)",
+  "main_category": "Video Games",
+  "price": 14.99,
+  "average_rating": 3.9,
+  "rating_number": 3219
+ },
+ {
+  "_id": "B0X54B0X9U",
+  "title": "Frozen Chronicles HD Remaster (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 29.99,
+  "average_rating": 3.6,
+  "rating_number": 3756
+ },
+ {
+  "_id": "B0TJ3S1K87",
+  "title": "Crystal Legends 2 (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 29.99,
+  "average_rating": 3.8,
+  "rating_number": 3015
+ },
+ {
+  "_id": "B0SFQESH5A",
+  "title": "Hyper Legends 2 (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 14.99,
+  "average_rating": 4.8,
+  "rating_number": 4400
+ },
+ {
+  "_id": "B0HLSDMNVV",
+  "title": "Shadow Quest (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 49.99,
+  "average_rating": 3.8,
+  "rating_number": 8205
+ },
+ {
+  "_id": "B0SCAB8N86",
+  "title": "Turbo Frontier (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 9.99,
+  "average_rating": 3.6,
+  "rating_number": 7092
+ },
+ {
+  "_id": "B0PQXNJ1YD",
+  "title": "Robot Dungeon (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": 19.99,
+  "average_rating": 3.5,
+  "rating_number": 4199
+ },
+ {
+  "_id": "B0RUC5MLT4",
+  "title": "Hyper Tactics Collection (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": null,
+  "average_rating": 3.9,
+  "rating_number": 5401
+ },
+ {
+  "_id": "B0YMAX0F6T",
+  "title": "Mystic Rally HD Remaster (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 49.99,
+  "average_rating": 3.8,
+  "rating_number": 93
+ },
+ {
+  "_id": "B01C1BVVQF",
+  "title": "Iron Frontier (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 39.99,
+  "average_rating": 4.4,
+  "rating_number": 6393
+ },
+ {
+  "_id": "B0838J98BQ",
+  "title": "Mystic League Deluxe Edition (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": null,
+  "average_rating": 3.5,
+  "rating_number": 5921
+ },
+ {
+  "_id": "B0BR7SA5E8",
+  "title": "Crystal Dungeon (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 29.99,
+  "average_rating": 4.4,
+  "rating_number": 1094
+ },
+ {
+  "_id": "B0RPQ570E6",
+  "title": "Robot Frontier (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": 59.99,
+  "average_rating": 4.6,
+  "rating_number": 3260
+ },
+ {
+  "_id": "B0JA6D7TGP",
+  "title": "Iron Kingdom (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": 59.99,
+  "average_rating": 4.5,
+  "rating_number": 4690
+ },
+ {
+  "_id": "B0NVF6BU5E",
+  "title": "Ancient Island (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 9.99,
+  "average_rating": 4.9,
+  "rating_number": 6350
+ },
+ {
+  "_id": "B09SZJ8THZ",
+  "title": "Neon Odyssey 2 (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 9.99,
+  "average_rating": 4.0,
+  "rating_number": 2618
+ },
+ {
+  "_id": "B0Y0WHXAWX",
+  "title": "Rogue Raiders (PC)",
+  "main_category": "Video Games",
+  "price": 29.99,
+  "average_rating": 4.8,
+  "rating_number": 3219
+ },
+ {
+  "_id": "B00EZ3TDTG",
+  "title": "Star Raiders 2 (PC)",
+  "main_category": "Video Games",
+  "price": null,
+  "average_rating": 4.4,
+  "rating_number": 2451
+ },
+ {
+  "_id": "B0NZ3B1PFD",
+  "title": "Lost Frontier (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": 14.99,
+  "average_rating": 4.1,
+  "rating_number": 2282
+ },
+ {
+  "_id": "B062XUVSS1",
+  "title": "Thunder League Deluxe Edition (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 59.99,
+  "average_rating": 4.1,
+  "rating_number": 6473
+ },
+ {
+  "_id": "B0P87Q4X43",
+  "title": "Crystal Tactics (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 49.99,
+  "average_rating": 3.8,
+  "rating_number": 2874
+ },
+ {
+  "_id": "B0SNB2029P",
+  "title": "Mystic Legends (Xbox Series X)",
+  "main_category": "Video Games",
+  "price": 69.99,
+  "average_rating": 4.5,
+  "rating_number": 8173
+ },
+ {
+  "_id": "B0TR0143VB",
+  "title": "Galaxy Party Deluxe Edition (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 14.99,
+  "average_rating": 4.5,
+  "rating_number": 7766
+ },
+ {
+  "_id": "B0RGQKK9G5",
+  "title": "Robot Racer Collection (PC)",
+  "main_category": "Video Games",
+  "price": null,
+  "average_rating": 4.6,
+  "rating_number": 34
+ },
+ {
+  "_id": "B0VJS93HGE",
+  "title": "Shadow Rally (Nintendo Switch)",
+  "main_category": "Video Games",
+  "price": 49.99,
+  "average_rating": 4.0,
+  "rating_number": 3675
+ },
+ {
+  "_id": "B0TWR69RRB",
+  "title": "Star Racer (PC)",
+  "main_category": "Video Games",
+  "price": 59.99,
+  "average_rating": 3.5,
+  "rating_number": 3192
+ },
+ {
+  "_id": "B0ZQ7CX2Z1",
+  "title": "Robot Strike Deluxe Edition (PC)",
+  "main_category": "Video Games",
+  "price": 59.99,
+  "average_rating": 4.5,
+  "rating_number": 8283
+ },
+ {
+  "_id": "B0VNQ5QSUG",
+  "title": "Iron Odyssey (PlayStation 5)",
+  "main_category": "Video Games",
+  "price": 9.99,
+  "average_rating": 4.3,
+  "rating_number": 3670
+ }
+]
