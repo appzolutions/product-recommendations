@@ -17,6 +17,7 @@ Until the real data is in MongoDB, the back end uses **sample data** in `backend
 | `backend/tests/test_api.py` | Automatic tests (run against sample data and a simulated MongoDB) |
 | `backend/scripts/measure_latency.py` | Measures response time, for Objective 4 in the proposal |
 | `backend/scripts/load_fixtures_to_mongo.py` | Copies the sample data into Atlas, to test the connection early |
+| `backend/scripts/import_spark_output.py` | Checks the JSON files exported from Databricks and uploads them to Atlas |
 | `frontend/` | The React page (Vite) |
 | `render.yaml` | Settings to host both parts on Render for free |
 
@@ -63,6 +64,13 @@ python scripts/measure_latency.py
 python scripts/load_fixtures_to_mongo.py --replace-real
 ```
 This writes the sample users and games into the `products` and `users` collections. Only use `--replace-real` while those collections are still empty; once the Spark notebook has written the real data, run it without the flag (it then writes to `products_sample` and `users_sample` instead).
+
+**Loading the real data:** the Precompute lead exports two JSON folders from Databricks (format in `api_contract.md`, section 3). Download them, then from `backend/`:
+```
+python scripts/import_spark_output.py --users path/to/users --products path/to/products --dry-run
+python scripts/import_spark_output.py --users path/to/users --products path/to/products
+```
+The first command only checks the files; the second uploads them (it replaces the `users` and `products` collections).
 
 Never commit the `.env` file: it contains the database password. `.gitignore` already excludes it.
 

@@ -1,8 +1,10 @@
 # API contract and MongoDB schema
 
-**Owner:** App lead (API + UI). **Agree with:** Precompute + storage lead (role 3).
+**Owner:** App lead (API + UI). **Agree with:** Precompute lead (role 3).
 
-This document fixes the shape of the data in MongoDB and what the API returns, so the Spark notebooks and the web app can be built at the same time. If anything here needs to change, update this file first and tell the App lead.
+**Who does what:** the Precompute lead trains/pre-computes in Databricks and **exports two JSON files** (section 3). The App lead uploads them to MongoDB Atlas with `backend/scripts/import_spark_output.py` and runs the app.
+
+This document fixes the shape of the exported files, the data in MongoDB, and what the API returns, so the Spark notebooks and the web app can be built at the same time. If anything here needs to change, update this file first and tell the App lead.
 
 ## 1. MongoDB (Atlas)
 
@@ -107,3 +109,37 @@ A user's recommendations, with product details joined in, plus what they rated b
 |---|---|---|
 | 404 | No document for this user ID | `{ "detail": "No recommendations found for user <id>" }` |
 | 422 | `limit` out of range | FastAPI's standard validation message |
+
+## 3. Export from Databricks (Precompute lead → App lead)
+
+Two exports, written with Spark's `df.write.json(...)`. Each produces a folder of `part-*.json` files with **one JSON object per line**. The documents have exactly the shape of the MongoDB documents in section 1, so the upload is a straight copy.
+
+| Export | One line per | Fields |
+|---|---|---|
+| `products` | product (only products that appear in a recommendation or past rating are needed) | `_id`, `title`, `main_category`, `price`, `average_rating`, `rating_number` |
+| `users` | user (active users only, e.g. 5+ ratings) | `_id`, `recommendations` (10 items: `rank`, `product_id`, `predicted_rating`), `past_ratings` (up to 10: `product_id`, `rating`, `timestamp`) |
+
+Example of one line in the `users` export:
+```json
+{"_id":"AGBFYI2DDIKXC5Y4FARTYDTQBMFQ","recommendations":[{"rank":1,"product_id":"B07JGVX9D6","predicted_rating":4.87}],"past_ratings":[{"product_id":"B01N1037CV","rating":5.0,"timestamp":1588615855070}]}
+```
+
+**Checklist for the export**
+- [ ] IDs are the original Amazon `user_id` and `parent_asin`, not StringIndexer numbers.
+- [ ] `rank` starts at 1 and follows the ALS score (best first).
+- [ ] `predicted_rating` rounded to 2 decimals.
+- [ ] Every `product_id` used in `users` exists in `products`.
+
+**Writing the files in Databricks (Free Edition)**
+```python
+users_docs.coalesce(1).write.mode("overwrite").json("/Volumes/workspace/default/export/users")
+products_docs.coalesce(1).write.mode("overwrite").json("/Volumes/workspace/default/export/products")
+```
+Then download both folders from **Catalog → workspace → default → export** and share them with the App lead (zipped, e.g. via Google Drive). Databricks Free Edition restricts outbound internet access, so it can't write to MongoDB Atlas directly.
+
+**Upload (App lead)**
+```
+python scripts/import_spark_output.py --users <users folder> --products <products folder> --dry-run   # check only
+python scripts/import_spark_output.py --users <users folder> --products <products folder>             # upload
+```
+The script checks every line, reports problems and the estimated size, and only uploads when everything is valid.
