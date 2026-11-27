@@ -59,6 +59,7 @@ class Recommendation(BaseModel):
     title: Optional[str] = None
     price: Optional[float] = None
     average_rating: Optional[float] = None
+    image: Optional[str] = None
 
 
 class PastRating(BaseModel):
@@ -110,7 +111,8 @@ def user_recommendations(user_id: str, limit: int = Query(10, ge=1, le=10)):
         "recommendations": [
             {**r, "title": details(r["product_id"]).get("title"),
              "price": details(r["product_id"]).get("price"),
-             "average_rating": details(r["product_id"]).get("average_rating")}
+             "average_rating": details(r["product_id"]).get("average_rating"),
+             "image": details(r["product_id"]).get("image")}
             for r in recs
         ],
         "past_ratings": [{**p, "title": details(p["product_id"]).get("title")} for p in past],

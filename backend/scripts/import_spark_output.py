@@ -57,6 +57,7 @@ def check_products(docs):
             "price": float(d["price"]) if d.get("price") not in (None, "", "None") else None,
             "average_rating": float(d["average_rating"]) if d.get("average_rating") is not None else None,
             "rating_number": int(d["rating_number"]) if d.get("rating_number") is not None else None,
+            "image": d.get("image") or None,
         })
     return clean, errors
 

@@ -2,7 +2,7 @@
 
 **Owner:** App lead (API + UI). **Agree with:** Precompute lead (role 3).
 
-**Who does what:** the Precompute lead trains/pre-computes in Databricks and **exports two JSON files** (section 3). The App lead uploads them to MongoDB Atlas with `backend/scripts/import_spark_output.py` and runs the app.
+**Who does what:** the App lead builds the MongoDB data from the team's Databricks outputs **as they are** (section 4, recommended), or receives ready-made JSON exports (section 3). Either way, the App lead uploads to MongoDB Atlas and runs the app.
 
 This document fixes the shape of the exported files, the data in MongoDB, and what the API returns, so the Spark notebooks and the web app can be built at the same time. If anything here needs to change, update this file first and tell the App lead.
 
@@ -143,3 +143,31 @@ python scripts/import_spark_output.py --users <users folder> --products <product
 python scripts/import_spark_output.py --users <users folder> --products <products folder>             # upload
 ```
 The script checks every line, reports problems and the estimated size, and only uploads when everything is valid.
+
+## 4. Recommended: build from the Databricks outputs as they are (App lead)
+
+So nobody has to reshape data for the app, the App lead converts the existing outputs with `backend/scripts/build_from_databricks.py`. Only three inputs are needed:
+
+| Input | Where it comes from | Shape |
+|---|---|---|
+| `reviews_indexed` | Data lead, already in `/Volumes/workspace/default/video_games_processed/` | Parquet, as documented in `data_markdown.md` (it holds both Amazon IDs and ALS indexes, so the mapping tables are not needed) |
+| ALS recommendations | Modeling / Precompute lead | **Any of:** the raw `recommendForAllUsers(N)` output (`user_idx`, `recommendations[{product_idx, rating}]`), or a flat table (`user_idx`, `product_idx`, `prediction`), saved as Parquet or JSON |
+| `meta_Video_Games.jsonl.gz` | Already in `/Volumes/workspace/default/video_games_raw/` | Amazon product metadata (title, price, images) |
+
+**Only request to the Modeling / Precompute lead:** save the ALS output with `recommendForAllUsers(20)` (not 10), e.g.
+```python
+model.recommendForAllUsers(20).write.mode("overwrite").parquet("/Volumes/workspace/default/video_games_processed/als_recs")
+```
+The script removes games the user has already rated (ALS does not) and keeps the best 10, so asking for 20 leaves room.
+
+**Steps (App lead)**
+1. Download `reviews_indexed`, the ALS output folder and `meta_Video_Games.jsonl.gz` from the Volume (Catalog > workspace > default).
+2. From `backend/` (with `pip install -r requirements-data.txt` done once):
+```
+python scripts/build_from_databricks.py --reviews <reviews_indexed> --recs <als_recs> --meta <meta_Video_Games.jsonl.gz>
+python scripts/import_spark_output.py --users app_data/users.jsonl --products app_data/products.jsonl --dry-run
+python scripts/import_spark_output.py --users app_data/users.jsonl --products app_data/products.jsonl
+```
+If the dry run reports the data is too big for the free 512 MB cluster, rebuild with `--max-past 5` or `--min-ratings 5`.
+
+Products also get an optional `image` field (first product picture URL), which the API returns with each recommendation.
